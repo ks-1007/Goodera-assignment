@@ -2,7 +2,7 @@ import "./App.css"
 import Navbar from "./Components/Navbar/Navbar"
 import ExplorePage from "./Pages/ExplorePage"
 
-import { Switch, Route, Link, Router, Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 import PostJob from "./Pages/PostJob"
 import NotFound from "./Pages/NotFound"
 function App() {
@@ -10,15 +10,9 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route exact path="/">
-          <ExplorePage />
-        </Route>
-        <Route path="/post">
-          <PostJob />
-        </Route>
-        <Route>
-          <NotFound />
-        </Route>
+        <Route exact path="/" element={<ExplorePage />}></Route>
+        <Route path="/post" element={<PostJob />}></Route>
+        <Route element={<NotFound />}></Route>
       </Routes>
     </div>
   )

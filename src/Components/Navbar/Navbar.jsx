@@ -21,7 +21,9 @@ function Navbar() {
               stroke-linejoin="round"
             />
           </svg>
-          <p className={styles.jobHuntText}>JobHunt</p>
+          <Link to="/">
+            <p className={styles.jobHuntText}>JobHunt</p>
+          </Link>
         </div>
         <div>
           <p>Find Jobs</p>
@@ -32,8 +34,11 @@ function Navbar() {
       </div>
       <div className={styles.rightSection}>
         <div>
-          <p>Post a Job</p>
+          <Link to="/post">
+            <p>Post a Job</p>
+          </Link>
         </div>
+
         <div>
           <p>Sign in</p>
         </div>

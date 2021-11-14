@@ -1,6 +1,9 @@
-import React from "react"
+import React, { useState } from "react"
 import styles from "./HeroSection.module.css"
-function HeroSection() {
+function HeroSection({ handleFilter }) {
+  const [title, setTitle] = useState("")
+  const [location, setLocation] = useState("")
+  const handleSearch = () => {}
   return (
     <div className={styles.heroRoot}>
       <h1>Find Your Dream Job</h1>
@@ -22,7 +25,13 @@ function HeroSection() {
               stroke-linejoin="round"
             />
           </svg>
-          <input type="text" name="" id="" placeholder="Job title or keyword" />
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Job title or keyword"
+            onChange={(e) => setTitle(e.target.value)}
+          />
         </div>
         <div className={styles.searchSection}>
           <svg
@@ -40,14 +49,18 @@ function HeroSection() {
               stroke-linejoin="round"
             />
           </svg>
-          <select name="" id="">
+          <select name="" id="" onChange={(e) => setLocation(e.target.value)}>
             <option value="">Select location</option>
-            <option value="">Select location1</option>
-            <option value="">Select location2</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Singapore">Singapore</option>
+            <option value="UK">UK</option>
           </select>
         </div>
 
-        <button className={styles.searchBtn}>Search</button>
+        <button className={styles.searchBtn} onClick={handleSearch}>
+          Search
+        </button>
       </div>
     </div>
   )

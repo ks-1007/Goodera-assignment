@@ -22,7 +22,7 @@ router.get("", async (req, res) => {
 
 // get job of a particular id
 router.get("/:id", async (req, res) => {
-  const job = await Job.findById(req.params.id).lean().exec()
+  const job = await Job.find({ id: req.params.id }).lean().exec()
   return res.status(200).json({ job })
 })
 

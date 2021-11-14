@@ -1,10 +1,11 @@
 import React from "react"
-import styles from "../Components/ExplorePageComponents/ExplorePage.module.css"
 import HeroSection from "../Components/ExplorePageComponents/HeroSection"
+import JoblistSection from "../Components/ExplorePageComponents/JoblistSection"
 function ExplorePage() {
   return (
     <div>
       <HeroSection />
+      <JoblistSection />
     </div>
   )
 }

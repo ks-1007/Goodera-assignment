@@ -1,0 +1,47 @@
+.navRoot {
+  background: linear-gradient(274.83deg, #5db0df 0.58%, #5d7adf 74.3%);
+  /* height: 100px; */
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+.jobHuntText {
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  color: #ffffff;
+  margin-left: 5px;
+}
+.leftSection {
+  display: flex;
+  align-items: center;
+}
+.leftSection > div {
+  padding-right: 40px;
+  cursor: pointer;
+}
+.leftSection > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+.rightSection {
+  display: flex;
+  align-items: center;
+}
+.rightSection > div {
+  padding-left: 40px;
+  cursor: pointer;
+}
+p {
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  color: #ffffff;
+}

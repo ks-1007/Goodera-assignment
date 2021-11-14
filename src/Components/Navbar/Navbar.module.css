@@ -36,7 +36,7 @@
   padding-left: 40px;
   cursor: pointer;
 }
-p {
+.navRoot p {
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;

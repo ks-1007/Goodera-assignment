@@ -5,7 +5,7 @@
   padding: 50px 10%;
   position: relative;
 }
-h1 {
+.heroRoot h1 {
   margin: 0;
 
   font-size: 48px;
@@ -16,21 +16,25 @@ h1 {
   text-align: left;
   color: white;
 }
-p {
+.heroRoot p {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0em;
   text-align: left;
+  color: white;
 }
 .searchBarCont {
+  box-shadow: 2px 12px 8px 2px #0000000d;
+
   height: 80px;
-  max-width: 1154px;
-  min-width: 1154px;
+  max-width: 1000px;
+  min-width: 1000px;
   left: 143px;
   top: 314px;
   border-radius: 24px;
+  margin: auto;
 
   background-color: white;
   position: absolute;

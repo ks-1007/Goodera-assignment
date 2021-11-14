@@ -9,7 +9,13 @@ const router = express.Router()
 router.get("", async (req, res) => {
   const title = req.query.title || ""
   const location = req.query.location || ""
-  const query = { title, location }
+  const query = {}
+  if (title) {
+    query.title = title
+  }
+  if (location) {
+    query.location = location
+  }
   const jobs = await Job.find(query).lean().exec()
   return res.status(200).json({ jobs })
 })

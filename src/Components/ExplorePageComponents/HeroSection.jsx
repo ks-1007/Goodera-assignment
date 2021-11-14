@@ -3,7 +3,11 @@ import styles from "./HeroSection.module.css"
 function HeroSection({ handleFilter }) {
   const [title, setTitle] = useState("")
   const [location, setLocation] = useState("")
-  const handleSearch = () => {}
+  const handleSearch = () => {
+    if (title || location) {
+      handleFilter({ title, location })
+    }
+  }
   return (
     <div className={styles.heroRoot}>
       <h1>Find Your Dream Job</h1>

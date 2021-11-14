@@ -55,6 +55,7 @@
   color: white;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 .searchSection {
   display: flex;
